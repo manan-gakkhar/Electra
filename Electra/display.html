@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Electricity Bill Calculator - Electra</title>
+    <style>
+      .bill-calculator {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      
+      .bill-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--text-dark);
+      }
+      
+      .bill-form input {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      .bill-form .btn-container {
+        text-align: center;
+      }
+      
+      .bill-form .btn {
+        display: inline-block;
+        border: none;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      .page-header {
+        text-align: center;
+        padding: 3rem 1rem;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url("assets/header.jpg");
+        background-position: center center;
+        background-size: cover;
+        color: var(--white);
+      }
+      
+      .page-header h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-family: var(--header-font);
+        margin-bottom: 1rem;
+      }
+      
+      .page-header p {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__logo"><a href="index.html">Electra</a></div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="index.html#home">Home</a></li>
+          <li class="link"><a href="./display.html">Calculate Bill</a></li>
+          <li class="link"><a href="index.html#choose">Why Choose Us?</a></li>
+          <li class="link"><a href="index.html#offer">Cost Optimization</a></li>
+          <li class="link"><a href="index.html#review">Customer Reviews</a></li>
+          <li class="link"><a href="index.html#store">Service Centers</a></li>
+        </ul>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="page-header">
+      <h1>Electricity Bill Calculator</h1>
+      <p>Calculate your electricity bill based on your consumption and get instant results</p>
+    </section>
+
+    <section class="section__container">
+      <div class="bill-calculator">
+        <form class="bill-form" action="calculate.php" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+          <label for="id">Customer ID</label>
+          <input type="text" id="id" name="id" placeholder="Enter your customer ID" required />
+
+          <label for="date">Billing Date</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="city">City</label>
+          <input type="text" id="city" name="month" placeholder="Enter your city" required />
+
+          <label for="units">Units Consumed</label>
+          <input type="number" id="units" name="units" placeholder="Enter units consumed" required />
+
+          <div class="btn-container">
+            <button class="btn" type="submit">Calculate Bill</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__content">
+          <h4>STAY INFORMED ABOUT ELECTRICITY RATES AND SERVICE UPDATES</h4>
+          <p>
+            Subscribe to receive notifications about tariff changes, maintenance schedules, and energy-saving tips. 
+            Report issues or share feedback to help us improve our services.
+          </p>
+        </div>
+        <div class="footer__form">
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <div class="footer__logo">
+          <h4><a href="#">Electra</a></h4>
+          <p>Copyright © 2024 Electra. All rights reserved.</p>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__link"><a href="#">About</a></li>
+          <li class="footer__link"><a href="#">Partnership</a></li>
+          <li class="footer__link"><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

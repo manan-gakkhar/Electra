@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Electra</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__logo"><a href="#">Electra</a></div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="./display.html">Calculate Bill</a></li>
+          <li class="link"><a href="#choose">Why Choose Us?</a></li>
+          <li class="link"><a href="#offer">Cost Optimization</a></li>
+          <li class="link"><a href="#review">Customer Reviews</a></li>
+          <li class="link"><a href="#store">Service Centers</a></li>
+        </ul>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+        
+      </nav>
+      <div class="section__container header__container" id="home">
+        <h1>Electra Spend: One stop solution for all your electricity bills.</h1>
+        
+        <form action="display.html" method="get" class="inline-search">
+          <select name="provider" id="provider" required>
+            <option value="" disabled selected>Select provider</option>
+            <option value="dhbvn">DHBVN</option>
+            <option value="reliance">Reliance</option>
+            <option value="adani">Adani Electric</option>
+            <option value="other">Other</option>
+          </select>
+          <input type="text" id="account" name="account" placeholder="Enter account number" required>
+          <button type="submit" class="search-btn">Check Bill <i class="ri-arrow-right-line"></i></button>
+        </form>
+        
+        <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
+      </div>
+    </header>
+
+    <section class="section__container choose__container" id="choose">
+      <img class="choose__bg" src="assets/dot-bg.png" alt="bg" />
+      <div class="choose__content">
+        <h2 class="section__header">Why Choose Us</h2>
+        <p class="section__subheader">
+          Simplify your electricity bill payments, track usage, and manage multiple connections all in one place. Experience hassle-free bill management with real-time updates.
+        </p>
+        <div class="choose__grid">
+          <div class="choose__card">
+            <span><i class="ri-calculator-line"></i></span>
+            <h4>Bill Calculator Feature</h4>
+            <p>
+              Smart and accurate electricity bill calculation tools at your fingertips
+            </p>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-time-line"></i></span>
+            <h4>Real-Time Calculation</h4>
+            <p>
+              Instant bill calculation based on your usage patterns and current tariff rates, providing accurate cost estimates.
+            </p>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-customer-service-2-line"></i></span>
+            <h4>24/7 Customer Support</h4>
+            <p>
+              Round-the-clock assistance for bill-related queries, technical support, and instant resolution of billing discrepancies.
+            </p>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-loop-right-line"></i></span>
+            <h4>Cost Optimization</h4>
+            <p>
+              Get personalized recommendations to reduce your electricity consumption and save money on monthly bills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="choose__image">
+        <img src="assets/choose.jpg" alt="choose" />
+      </div>
+    </section>
+
+    <section class="skills-container" id="offer">
+      <div class="offer__grid__top" style="margin-right: 10px; margin-left: 10px;">
+        <img src="assets/offer-1.jpg" alt="offer" />
+        <img src="assets/offer-2.jpg" alt="offer" />
+        <img src="assets/offer-3.jpg" alt="offer" />
+        <div class="skills-content">
+          <h2 class="section__header">Cost Optimization Techniques</h2>
+          <p class="section__subheader">
+            These are the following ways you can reduce your electricity consumption and make your pocket heavy with savings.
+          </p>
+          <button class="btn" style="margin-top: 10px; margin-bottom: 10px;">Explore Now</button>
+        </div>
+      </div>
+      <div class="offer__grid__bottom">
+        <img src="assets/offer-4.jpg" alt="offer" />
+        <img src="assets/offer-5.jpg" alt="offer" />
+        <img src="assets/offer-6.jpg" alt="offer" />
+        <img src="assets/offer-7.jpg" alt="offer" />
+      </div>
+    </section>
+
+    <!-- <section class="section__container craft__container" id="craft">
+      <div class="craft__content">
+        <h2 class="section__header">Crafted with excellent material</h2>
+        <p class="section__subheader">
+          Elevate Your Style with Quality and Comfort
+        </p>
+        <button class="btn">Explore</button>
+      </div>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img src="assets/craft-1.png" alt="craft" />
+          <p>Air 1</p>
+          <h4>$65.00</h4>
+        </div>
+        <a href="#"><i class="ri-add-line"></i></a>
+      </div>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img src="assets/craft-2.png" alt="craft" />
+          <p>Crater</p>
+          <h4>$50.00</h4>
+        </div>
+        <a href="#"><i class="ri-add-line"></i></a>
+      </div>
+      <div class="craft__image">
+        <div class="craft__image__content">
+          <img src="assets/craft-3.png" alt="craft" />
+          <p>Blazer</p>
+          <h4>$70.00</h4>
+        </div>
+        <a href="#"><i class="ri-add-line"></i></a>
+      </div>
+    </section> -->
+
+    <!-- <section class="section__container modern__container" id="blog">
+      <div class="modern__image">
+        <img src="assets/dot-bg.png" alt="bg" class="modern__bg" />
+        <img src="assets/modern-1.jpg" alt="modern" class="modern__img-1" />
+        <img src="assets/modern-2.jpg" alt="modern" class="modern__img-2" />
+        <img src="assets/modern-3.jpg" alt="modern" class="modern__img-3" />
+      </div>
+      <div class="modern__content">
+        <h2 class="section__header">
+          We help you find your perfect match for the perfect you
+        </h2>
+        <p class="section__subheader">
+          We provide a full range of Nike shoe services, from personalized fittings to expert advice on the latest technologies. Our team is dedicated to helping you find the perfect pair that matches your style, supports your needs, and enhances your performance, whether you're training, running, or just on the move.
+        </p>
+        <div class="modern__grid">
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              Our team specializes in crafting customized footwear that blends performance with modern style.
+            </p>
+          </div>
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              We stay ahead of footwear trends, ensuring your shoes are both innovative and on-point.
+            </p>
+          </div>
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              Nike shoes aren't just about looks; they're built for comfort, support, and peak performance.
+            </p>
+          </div>
+          <div class="modern__card">
+            <span><i class="ri-checkbox-blank-circle-line"></i></span>
+            <p>
+              We handle every step of your shoe experience, from selection to customization and delivery.
+            </p>
+          </div>
+        </div>
+        <button class="btn">Explore</button>
+      </div>
+    </section> -->
+
+    <section class="section__container testimonial__container" id="review">
+      <h2 class="section__header">Reviews</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                As a business owner managing multiple properties, Electra's platform is a game-changer. The consolidated billing view and usage analytics help me monitor all locations efficiently. Their 24/7 customer support is exceptional when I need assistance.
+              </p>
+              <img src="assets/profile-pic-1.jpg" alt="testimonial" />
+              <h4>Jack Fernandez</h4>
+              <h5>Artist</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                The cost optimization features are fantastic! I received personalized recommendations that helped me identify energy-hungry appliances and peak usage times. The bill calculator is accurate and helps me plan my monthly expenses better.
+              </p>
+              <img src="assets/profile-pic-2.jpg" alt="testimonial" />
+              <h4>Tira D'Souza</h4>
+              <h5>Corporate</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                Switching between different service providers was always a hassle until I found Electra. The platform seamlessly integrates with various providers, and the bill comparison feature helps me choose the best plans. Highly recommended!
+              </p>
+              <img src="assets/profile-pic-3.jpg" alt="testimonial" />
+              <h4>Harry</h4>
+              <h5>Banker</h5>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <p>
+                Electra's real-time monitoring has completely changed how I manage my household energy. The usage spikes and the monthly consumption trends have helped me reduce my electricity bills significantly. The interface is simple yet powerful.
+              </p>
+              <img src="assets/profile-pic-4.jpg" alt="testimonial" />
+              <h4>Joe Bilton</h4>
+              <h5>Businessman</h5>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section__container blog_container" id="store">
+      <h2 class="section__header">Our Energy Centers</h2>
+      <div class="blog__grid">
+        <div class="blog__card">
+          <img src="assets/blog-1.jpg" alt="blog" style="height: 250px;"/>
+          <h4>DHBVN Customer Care Center - Gurgaon</h4>
+          <p><span>Address: Plot No. 87, Sector 44, Gurgaon, Haryana - 122002</span></p>
+        </div>
+        <div class="blog__card">
+          <img src="assets/blog-2.jpg" alt="blog" />
+          <h4>Reliance Energy Service Center - Mumbai</h4>
+          <p>
+            <span>Reliance Energy Management Centre, Santa Cruz East, Mumbai, Maharashtra - 400055</span></p>
+        </div>
+        <div class="blog__card">
+          <img src="assets/blog-3.jpg" alt="blog" style="height: 250px;" />
+          <h4>Adani Electricity Mumbai - Borivali</h4>
+          <p><span>CTS No. 407/7, Chandavarkar Road, Borivali West, Mumbai, Maharashtra - 400092</span></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__content">
+          <h4>STAY INFORMED ABOUT ELECTRICITY RATES AND SERVICE UPDATES</h4>
+          <p>
+            Subscribe to receive notifications about tariff changes, maintenance schedules, and energy-saving tips. 
+            Report issues or share feedback to help us improve our services.
+          </p>
+        </div>
+        <div class="footer__form">
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="section__container footer__bar">
+        <div class="footer__logo">
+          <h4><a href="#">Electra</a></h4>
+          <p>Copyright © 2024 Electra. All rights reserved.</p>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__link"><a href="#">About</a></li>
+          <li class="footer__link"><a href="#">Partnership</a></li>
+          <li class="footer__link"><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
